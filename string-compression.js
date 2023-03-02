@@ -1,0 +1,1 @@
+compress=(x)=>{n=x.length;z=1;for(i=n-2;i>=0;i--){if(x[i]==x[i+1]){z++;}else if(z>1){x.splice(i+2,z-1,...z.toString().split(''));z=1;}}if(z>1){x.splice(1,z-1,...z.toString().split(''));}return x.length;}
